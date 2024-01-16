@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ecommerce.css">
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" >
+</head>
+
+<body>
+  <div class="cartmenu w-full px-20 flex pt-4 hidden">
+    <div class="cartheader flex justify-between">
+      <h1 class="text-4xl">Cart</h1>
+      <h2 class="closeCart text-4xl">X</h2>
+    </div>
+    <div class="removeAll flex justify-between mt-5">
+      <div class="total-price">Total Price: $<span id="cartTotal"></span></div>
+      <div class = "bg-black text-white">
+        <button onclick="removeAllProducts()">Empty cart.</button>
+      </div>
+    </div>
+  
+  
+  
+    <div class="cartObjects flex flex-wrap align-center justify-center gap-24">
+  
+    </div>
+  </div>
+  <header>
+    <div class="logo"><a href="">ShopAddict</a></div>
+    
+    
+    <div class="heading">
+      <ul>
+        <li><a href="index.html" class="under">HOME</a></li>        
+            
+      </ul>
+    </div>
+    
+  </header>
+  <section>
+    <div class="section">
+      <div class="section1">
+        <div class="img-slider">
+          <img src="https://www.businessmagazine.org/wp-content/uploads/2021/12/Shopping.jpg" alt="" class="img cart">
+          <img src="https://thumbs.dreamstime.com/b/customer-choosing-smartphone-mobile-phone-shop-smart-female-customer-choosing-smartphone-mobile-phone-shop-difficult-105672612.jpg" alt="" class="img">
+          <img src="https://smarther.co/wp-content/uploads/2020/07/mobile-ecommerce-blog.jpg" alt="" class="img">
+          <img src="https://wallpapercave.com/wp/wp1866299.jpg" alt="" class="img">
+          <img src="https://cdn.wallpapersafari.com/11/32/vOHgCS.jpg" alt="" class="img">
+        </div>
+
+      </div>
+      <div class="section2">
+        <div class="container">
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">SHOES</div>
+            <div class="price">$25</div>
+            
+			  <i class="fas cart fa-shopping-cart" data-product-id="1"></i>
+          </div>
+          <div class="items">
+            <div class="img img2"><img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">MEN's T-SHIRT</div>
+            <div class="price">$26</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="2"></i>
+          </div>
+          <div class="items">
+            <div class="img img3"><img src="https://i.pinimg.com/originals/24/23/d7/2423d7adb3456b95d3b08752b668dbbf.jpg" alt="image"></div>
+            <div class="name">JEANS</div>
+            <div class="price">$25</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="3"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">WATCH</div>
+            <div class="price">$90</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="4"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://tse4.mm.bing.net/th?id=OIP.1m-OpYu4qAvg0Com0r2D0gHaHa&pid=Api&P=0&h=220" alt=""></div>
+            <div class="name">SMART PHONE</div>
+            <div class="price">$110</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="5"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">TELEVISION</div>
+            <div>
+              <p  class="price">
+                $300
+              </p>
+              <i class="fas cart fa-shopping-cart" data-product-id="6"></i>
+
+            </div>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://i5.walmartimages.com/asr/8f2e34d2-7a73-4d9a-a918-88946c28e795_1.25ba94b8fa860dc26dca3da9b496202b.jpeg" alt=""></div>
+            <div class="name">HOODIES</div>
+            <div class="price">$15</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="7"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://tse2.mm.bing.net/th?id=OIP.GwVr_F85duhO9m8sb03luAHaFD&pid=Api&P=0&h=220" alt=""></div>
+            <div class="name">DINNER SET</div>
+            <div class="price">$10</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="8"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://tse3.mm.bing.net/th?id=OIP.87NrwHsvpPb3eeY4AsE4_QHaHa&pid=Api&P=0&h=220" alt=""></div>
+            <div class="name">BLANKETS</div>
+            <div class="price">$9.9</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="9"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://tse2.mm.bing.net/th?id=OIP.nCJetExclXlCeFMx5OKKIAHaFs&pid=Api&P=0&h=220" alt=""></div>
+            <div class="name">LAPTOP</div>
+            <div class="price">$99</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="10"></i>
+          </div>
+          
+          <div class="items">
+            <div class="img img1"><img src="https://tse3.mm.bing.net/th?id=OIP.QTnAhWjBcZhnI4xVA6FOIwHaIC&pid=Api&P=0&h=220" alt=""></div>
+            <div class="name">COFFEE MAKER</div>
+            <div class="price">$29.7</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="11"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+            <div class="name">BED</div>
+            <div class="price">$100</div>
+            
+            <i class="fas cart fa-shopping-cart" data-product-id="12"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">BOOK</div>
+            <div class="price">$9</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="13"></i>
+          </div>
+          <div class="items">
+            <div class="img img1"><img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+            <div class="name">BAG</div>
+            <div class="price">$36.5</div>
+            <i class="fas cart fa-shopping-cart" data-product-id="14"></i>
+          </div>
+          
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+    <div class="flex justify-end">
+      <div class="checkout bg-black text-white w-24 text-center cursor-pointer">
+        <h2>CHECKOUT</h2>
+      </div>
+    </div>
+    <div class="added-to-cart-message" id="addedToCartMessage"></div>
+
+  <footer>
+    <div class="footer0">
+      <h1>ShopAddict</h1>
+    </div>
+    <div class="footer1 ">
+      Connect with us at<div class="social-media">
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="footer2">
+      <div class="product">
+        <div class="heading">Products</div>
+        <div class="div">Sell your Products</div>
+        <div class="div">Advertise</div>
+        <div class="div">Pricing</div>
+        <div class="div">Product Buisness</div>
+
+      </div>
+      <div class="services">
+        <div class="heading">Services</div>
+        <div class="div">Return</div>
+        <div class="div">Cash Back</div>
+        <div class="div">Affiliate Marketing</div>
+        <div class="div">Others</div>
+      </div>
+      <div class="Company">
+        <div class="heading">Company</div>
+        <div class="div">Complaint</div>
+        <div class="div">Careers</div>
+        <div class="div">Affiliate Marketing</div>
+        <div class="div">Support</div>
+      </div>
+      <div class="Get Help">
+        <div class="heading">Get Help</div>
+        <div class="div">Help Center</div>
+        <div class="div">Privacy Policy</div>
+        <div class="div">Terms</div>
+        <div class="div">Login</div>
+      </div>
+    </div>
+    <div class="footer3">Copyright © <h4>ShopAddict</h4>2024</div>
+  </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="ecommerce.js"></script>
+
+</body>
+
+</html>
